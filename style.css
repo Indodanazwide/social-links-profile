@@ -1,0 +1,146 @@
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+  
+    --font-family: 'Inter', sans-serif;
+    --font-size-body: 14px;
+    --font-size-footer: 10px;
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+  
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, main, section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main, ul li {
+    border-radius: .7rem;
+}
+
+li {
+    list-style: none;
+}
+
+a { 
+    text-decoration: none;
+    color: var(--green);
+}
+
+body {
+    background-color: var(--grey-900);
+    font-size: var(--font-size-body);
+    font-family: var(--font-family);
+    max-width: var(--desktop-width);
+    color: var(--white);
+    text-align: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+main {
+    background-color: var(--grey-800);
+    font-weight: var(--font-weight-semibold);
+    flex-direction: column;
+    min-height: 70vh;
+    max-height: 90vh;
+    min-width: 30vw;
+    padding: 2rem;
+}
+
+section {
+    flex-direction: column;
+    min-width: 100%;
+}
+
+h1 {
+    font-weight: var(--font-weight-bold);
+    margin: 1.1rem 0 1rem;
+}
+
+.header p {
+    color: var(--green);
+}
+
+img {
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: .5s;
+    cursor: auto;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+img:active {
+    transform: scale(1.2);
+}
+
+.description {
+    font-weight: var(--font-weight-regular);
+    margin: 1.1rem 0;
+}
+
+ul {
+    width: 100%
+}
+
+ul li {
+    background-color: var(--grey-700);
+    text-align: center;
+    padding: 1rem 4rem;
+    margin: .7rem 0;
+    transition: .5s;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background-color: var(--green);
+}
+
+ul li:active {
+    background-color: var(--grey-700);
+    transform: scale(1.1);
+}
+
+ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: var(--white);
+}
+
+.footer {
+    margin-top: .5rem;
+}
+
+.footer p {
+    line-height: 1.5;
+    font-size: var(--font-size-footer);
+}
+
+.footer p a {
+    font-weight: unset;
+    transition: .5s;
+}
+
+.footer p a:hover {
+    color: var(--white);
+}
